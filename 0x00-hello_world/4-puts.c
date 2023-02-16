@@ -1,11 +1,12 @@
 #include <stdio.h>
 
-int main(void){
+int main(void)
+{    /* This is the main function where the execution of the program begins */
 
-	char str[] = "Programming is like building a multilingual puzzle";
+	char str[] = "\"Programming is like building a multilingual puzzle";
 
 	puts(str);
 
-	return 0;
+	return(0);
 
 }
