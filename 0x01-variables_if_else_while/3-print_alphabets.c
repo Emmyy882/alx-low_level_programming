@@ -2,7 +2,7 @@
 
 /**
  * main - Entry point
- * program to output the letters of the alphabet from small letters to capital letters using the putchar() function
+ * program to output the letters of the alphabet from small letters to capital letters
  * Return: Always 0 (Success)
  */
 int main(void)
@@ -14,7 +14,6 @@ int main(void)
 	{
 		putchar(letters[i]);
 	}
-	putchar('$');
 	putchar('\n');
 	return (0);
 }
