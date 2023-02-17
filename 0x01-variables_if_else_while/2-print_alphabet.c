@@ -9,7 +9,7 @@ int main(void)
 {
 	char letter[26] = "abcdefghijklmnopqrstuvwxyz";
 
-	for (i = 0; i < 26; i++)
+	for (int i = 0; i < 26; i++)
 	{
 		pitchar(letter[i]);
 	}
