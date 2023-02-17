@@ -11,7 +11,7 @@ int main(void)
 
 	for (int i = 0; i < 26; i++)
 	{
-		pitchar(letter[i]);
+		putchar(letter[i]);
 	}
 	putchar('\n');
 	return (0);
