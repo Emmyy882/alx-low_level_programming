@@ -2,7 +2,7 @@
 
 /**
  * main - Entry point
- * program to output the letters of the alphabet from small letters to capital letters
+ * program to output the letters
  * Return: Always 0 (Success)
  */
 int main(void)
