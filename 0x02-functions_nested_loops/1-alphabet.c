@@ -1,9 +1,7 @@
 #include "main.h"
 
 /**
- * printing small letters
- * print_alphabet to print small letter
- * Result: Always 0 (Sucess)
+ * print_alphabet - print letters in lowercase
  */
 void print_alphabet(void)
 {
