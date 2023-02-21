@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * print_sign: prints the sign of a number
- * n: is the parameter to store the number passed
+ * print_sign - prints the sign of a number
+ * @n: The parameter to be checked
  * Return: 1 if positive, 0 if zero and -1 if negative
  */
 int print_sign(int n)
@@ -14,7 +14,7 @@ int print_sign(int n)
 	}
 	else if (n == 0)
 	{
-		_putchar(0);
+		_putchar('0');
 		return (0);
 	}
 	else
