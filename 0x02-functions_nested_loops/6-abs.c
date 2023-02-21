@@ -4,10 +4,10 @@
  * _abs(int) - function to print absolute number
  * int - parameter 
  */
-int _abs(int)
+int _abs(int n)
 {
 	int absolute;
 
-	absolute = abs(int);
+	absolute = abs(int n);
 	return absolute;
 }
