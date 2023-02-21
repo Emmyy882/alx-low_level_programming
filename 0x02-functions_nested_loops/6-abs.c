@@ -8,6 +8,13 @@ int _abs(int n)
 {
 	int absolute;
 
-	absolute = abs(int n);
-	return absolute;
+	if (n == 1)
+	{
+		return (1);
+	}
+	else
+	{
+		absolute = (n * 10) / -10;
+		return absolute;
+	}
 }
