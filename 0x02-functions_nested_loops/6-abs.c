@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * _abs(int) - function to print absolute number
- * int - parameter 
+ * _abs - function to print absolute number
+ * @n: The parameter to be checked 
  */
 int _abs(int n)
 {
