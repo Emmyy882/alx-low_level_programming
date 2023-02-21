@@ -2,7 +2,8 @@
 
 /**
  * print_sign() - prints the sign of a number
- * int n - is the parameter to store the number passed
+ * int n: is the parameter to store the number passed
+ * Return: 1 if positive, 0 if zero and -1 if negative
  */
 int print_sign(int n)
 {
