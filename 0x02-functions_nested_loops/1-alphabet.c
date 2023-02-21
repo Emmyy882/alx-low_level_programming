@@ -1,14 +1,16 @@
 #include "main.h"
 
 /**
- * main - Entry point
  * print alphabet in small letter
  * Result: Always 0 (Sucess)
  */
-int main(void)
+void print_alphabet(void)
 {
-	char let[] = "abcdefghijklmnopqrstuvwxyz";
+	char letter;
 
-	print_alphabet(let[] );
-	return (0);
+	for (letter = 'a'; letter <= 'z'; letter++)
+	{
+		_putchar(letter);
+	}
+	_putchar('\n');
 }
