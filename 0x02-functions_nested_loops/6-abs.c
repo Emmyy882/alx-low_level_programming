@@ -1,16 +1,17 @@
 #include "main.h"
 
 /**
- * _abs - function to print absolute number
- * @n: The parameter to be checked 
+ * _abs - Checks the parameter
+ * @n: The parameter to be checked
+ * Return: a positive number
  */
 int _abs(int n)
 {
 	int absolute;
 
-	if (n == 1)
+	if (n >= 0)
 	{
-		return (1);
+		return (n);
 	}
 	else
 	{
