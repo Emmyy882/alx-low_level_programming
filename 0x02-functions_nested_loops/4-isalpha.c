@@ -2,7 +2,7 @@
 
 /**
  * _isalpha - check letters if lowercase or uppercase
- * c: is the parameter passed
+ * @c: The character to be checked
  * Return: 1 if true otherwise 0
  */
 int _isalpha(int c)
