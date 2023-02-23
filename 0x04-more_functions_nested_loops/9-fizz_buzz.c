@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * main - prints out numbers 1 to 100, for multiples of three prints Fizz, for multiples of five print Buzz. for numbers multiple of both print FizzBuzz
+ * main - prints a FizzBuzz program
  * Return: Always 0 (Success)
  */
 int main(void)
