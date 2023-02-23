@@ -2,7 +2,7 @@
 
 /**
  * _isupper - Takes the parameter
- * c: The character to be checked
+ * @c: The character to be checked
  * Return; 1 if isupper else 0
  */
 int _isupper(int c)
