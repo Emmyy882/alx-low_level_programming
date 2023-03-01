@@ -3,12 +3,12 @@
 
 /**
  * _strcat - concatenates two strings
- * @dest: the first string 
- * @src: second string to concat
- * Return: concatenated string
+ * @dest: the first string
+ * @str: stfing to concat
+ * Return: concatenation of both strings
  */
-char *_strcat(char *dest, char *src)
+char *_strcat(char *dest, char *str)
 {
-	strcat(dest, src);
+	strcat(dest, str);
 	return (dest);
 }
