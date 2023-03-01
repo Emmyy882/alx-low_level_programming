@@ -8,16 +8,8 @@
  * @n: the maximum number of characters to be appended
  * Return: concatenated string
  */
-#include "main.h"
-#include <stdio.h>
-
-/**
- * main - check the code
- *
- * Return: Always 0.
- */
 char *_strncat(char *dest, char *src, int n)
 {
-	strncat(dest, src, n);
+        strncat(dest, src, n);
 	return (dest);
 }
