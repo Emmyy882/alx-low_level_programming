@@ -13,8 +13,8 @@ int _strlen_recursion(char *s)
 		return (0);
 		_putchar('\n');
 	}
+	_strlen_recursion(s + n);
 	n++;
-	 _strlen_recursion(s + n);
-	 return (n);
+	return (n);
 }
 
