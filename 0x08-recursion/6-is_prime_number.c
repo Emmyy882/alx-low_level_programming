@@ -2,7 +2,7 @@
 /**
  * isPrimeRecursive - test a number if it is prime
  * @divisor: checks if n is divisible by certain numbers
- * is_prime_number - checks is a number is prime
+ * is_prime_number - passes arguments to irPrimeRecursive function
  * @n: the number
  * Return: 1 if prime or 0 if not prime
  */
@@ -20,7 +20,8 @@ int isPrimeRecursive(int n, int divisor)
 	{
 		return (0);
 	}
-	return isPrimeRecursive(n, divisor - 1);}
+	return isPrimeRecursive(n, divisor - 1);
+}
 
 int is_prime_number(int n)
 {
