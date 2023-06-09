@@ -4,7 +4,7 @@
  * main - takes arguments
  * @argc: takes the number of arguments
  * @argv: a string array to store passed arguments
- * Return: success
+ * Return: return one argument per line
  */
 int main(int argc, char *argv[])
 {
@@ -14,6 +14,5 @@ int main(int argc, char *argv[])
 	{
 		printf("%s\n",argv[i]);
 	}
-	printf("\n");
 	return (0);
 }
