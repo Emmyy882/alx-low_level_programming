@@ -8,10 +8,11 @@
  */
 int main(int argc, char *argv[])
 {
-	int cents = 0;
-	int mod = 0;
-	int res = 0;
+	int cents, mod, res;
 
+	cents = 0;
+	mod = 0;
+	res = 0;
 	if (argc < 2 || argc > 2)
 	{
 		printf("Error\n");
