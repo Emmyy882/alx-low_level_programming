@@ -8,7 +8,13 @@
  */
 int main(int argc, char *argv[])
 {
+	int i;
+	int sum = 0;
 
-	printf("%d\n", );
+	for (i = 1; i < argc; i++)
+	{
+		sum = argv[i];
+	}
+	printf("%d\n", sum);
 	return (0);
 }
