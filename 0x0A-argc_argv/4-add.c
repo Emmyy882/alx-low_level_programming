@@ -4,13 +4,14 @@
  * main - takes in arguments
  * @argc: stores the number of passed arguments
  * @argv: a string array of arguments
- * Return: 0 addition of arguments
+ * Return: addition of arguments
  */
 int main(int argc, char *argv[])
 {
 	int i;
-	int sum = 0;
+	int sum;
 
+	sum = 0;
 	if (argc < 2)
 	{
 		printf("%d\n", sum);
@@ -19,7 +20,7 @@ int main(int argc, char *argv[])
 	{
 		for(i = 1; i < argc; i++)
 		{
-			if (atoi(argv[i]) >= 0 && atoi(argv[i]) <= 9)
+			if (atoi(argv[i+1]) > 0  && atoi(argv[i+1]) < 9)
 			{
 				sum += atoi(argv[i]);
 			}
