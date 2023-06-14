@@ -8,20 +8,20 @@
  */
 char *_strcpy(char *dest, char *str)
 {
-        int i;
+	int i;
 
-        for (i = 0; str[i] != '\0'; i++)
-        {
-                dest[i] = str[i];
-        }
-        dest[i++] = '\0';
-        return (dest);
+	for (i = 0; str[i] != '\0'; i++)
+	{
+		dest[i] = str[i];
+	}
+	dest[i++] = '\0';
+	return (dest);
 }
 
 /**
- * _strlen - gets lenght of string
+ * _strlen - gets length of string
  * @src: the string
- * return: lenght of string
+ * Return: length of string
  */
 int _strlen(char *src)
 {
@@ -57,6 +57,4 @@ char *_strdup(char *str)
 	}
 	copy = _strcpy(copy, str);
 	return (copy);
-}
-
-	
+}	
