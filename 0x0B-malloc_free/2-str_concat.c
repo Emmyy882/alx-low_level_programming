@@ -36,8 +36,7 @@ char *_strcat(char *newstr, char *s1, char *s2)
 /**
  * _strlen - gets length of strings
  *
- * @s1: string one
- * 
+ * @s: string one
  * Return: length of strings
  */
 int _strlen(char *s)
