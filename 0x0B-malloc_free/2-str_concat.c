@@ -2,8 +2,13 @@
 #include <stdlib.h>
 /**
  * _strcat - adds two strings together
+ *
+ * @newstr: the returning string
+ *
  * @s1: first string
+ *
  * @s2: second string
+ *
  * Return: concat of two strings
  */
 char *_strcat(char *newstr, char *s1, char *s2)
@@ -30,9 +35,10 @@ char *_strcat(char *newstr, char *s1, char *s2)
 
 /**
  * _strlen - gets length of strings
+ *
  * @s1: string one
- * @s2: string two
- * Return: length of both strings
+ * 
+ * Return: length of strings
  */
 int _strlen(char *s)
 {
