@@ -57,4 +57,4 @@ char *_strdup(char *str)
 	}
 	copy = _strcpy(copy, str);
 	return (copy);
-}	
+}
