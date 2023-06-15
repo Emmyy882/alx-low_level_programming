@@ -2,10 +2,31 @@
 #include <stdlib.h>
 
 /**
- * _calloc - allocates mempry for an array
+ * _memset - fill a block of memory with a particular value
+ *
+ * @ptr: starting address of memory to be filled
+ * @x: value to be filled
+ * 
+ * @n: number of bytes to be filled
+ */
+char *_memset(char *ptr, int x, int n)
+{
+	int i;
+
+	for (i = 0; i < n; i++)
+	{
+		ptr[i] = x;
+	}
+	return (ptr);
+}
+
+/**
+ * _calloc - allocates memory for an array
  *
  * @nmemb: elements
- * @size: array size
+ *
+ * @size: memory size
+ *
  * Return: allocated memory
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
@@ -17,11 +38,12 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 		return (NULL);
 	}
 
-	ptr = malloc(nmemb * sizeof(size));
-
+	ptr = malloc(nmemb * size);
 	if (ptr == NULL)
 	{
 		return (NULL);
 	}
+
+	ptr = _memset(ptr, 0, (nmemb * size));
 	return (ptr);
 }
