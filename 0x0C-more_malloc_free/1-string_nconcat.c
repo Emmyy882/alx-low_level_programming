@@ -86,6 +86,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		concatlen = n;
 	}
+	else
+	{
+		concatlen = len2;
+	}
 
 	newstr = (char *)malloc(sizeof(char) * (len1 + len2 + 1));
 
