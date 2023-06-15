@@ -91,7 +91,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		concatlen = n;
 	}
 
-	newstr = (char *)malloc(sizeof(char) * (len1 + concatlen + 1));
+	newstr = malloc(sizeof(char) * (len1 + concatlen + 1));
 
 	if (newstr == NULL)
 	{
