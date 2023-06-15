@@ -82,13 +82,13 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	concatlen = 0; //concat length n bytes
 		       //of s2
-	if (n < len2)
+	if (n >= len2)
 	{
-		concatlen = n;
+		concatlen = len2;
 	}
 	else
 	{
-		concatlen = len2;
+		concatlen = n;
 	}
 
 	newstr = (char *)malloc(sizeof(char) * (len1 + concatlen + 1));
