@@ -27,18 +27,19 @@ int _strlen(char *s)
  *
  * @s2: string two
  *
+ * @n: n bytes for s2
  * Return: newstr
  */
-char *_strcat(char *newstr, char *s2, int concatlen)
+char *_strcat(char *newstr, char *s2, unsigned int n)
 {
-	int i = 0, j = 0;
+	unsigned int i = 0, j = 0;
 
 	while (newstr[i] != '\0')
 	{
 		i++;
 	}
 
-	while (j < concatlen)
+	while (j < n)
 	{
 		newstr[i] = s2[j];
 		i++;
@@ -60,7 +61,7 @@ char *_strcat(char *newstr, char *s2, int concatlen)
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	unsigned int len1, len2, concatlen;
+	unsigned int len1, len2;
 	int i = 0;
 	char *newstr;
 
@@ -77,18 +78,12 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	len1 = _strlen(s1); //length of s1
 	len2 = _strlen(s2); //length of s2
 
-	concatlen = 0; //concat length n bytes
-		       //of s2
 	if (n >= len2)
 	{
-		concatlen = len2;
-	}
-	else
-	{
-		concatlen = n;
+		n = len2;
 	}
 
-	newstr = malloc(sizeof(char) * (len1 + concatlen + 1));
+	newstr = malloc(sizeof(char) * (len1 + n + 1));
 
 	if (newstr == NULL)
 	{
@@ -101,6 +96,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		i++;
 	}
 
-	newstr = _strcat(newstr, s2, concatlen);
+	newstr = _strcat(newstr, s2, n);
 	return (newstr);
 }
