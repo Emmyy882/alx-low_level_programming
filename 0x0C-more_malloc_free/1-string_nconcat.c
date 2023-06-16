@@ -24,20 +24,17 @@ int _strlen(char *s)
  * _strcat - joins two strings
  *
  * @newstr: the returning string
- * @s1: string one
  *
  * @s2: string two
  *
  * Return: newstr
  */
-char *_strcat(char *newstr, char *s1, char *s2, int concatlen)
+char *_strcat(char *newstr, char *s2, int concatlen)
 {
 	int i = 0, j = 0;
 
-	//copying s1 to newstr
-	while (s1[i] != '\0')
+	while (newstr[i] != '\0')
 	{
-		newstr[i] = s1[i];
 		i++;
 	}
 
@@ -64,6 +61,7 @@ char *_strcat(char *newstr, char *s1, char *s2, int concatlen)
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	unsigned int len1, len2, concatlen;
+	int i = 0;
 	char *newstr;
 
 
@@ -97,7 +95,12 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		return (NULL);
 	}
 
-	newstr = _strcat(newstr, s1, s2, concatlen);
+	while (s1[i] != '\0')
+	{
+		newstr[i] = s1[i];
+		i++;
+	}
 
+	newstr = _strcat(newstr, s2, concatlen);
 	return (newstr);
 }
