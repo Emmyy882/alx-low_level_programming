@@ -4,9 +4,9 @@
 /**
  * malloc_checked - allocates memory using malloc
  *
- * @b: passed argument
+ * @b: passed size
  *
- * Return: void 
+ * Return: pointer to memory
  */
 void *malloc_checked(unsigned int b)
 {
@@ -16,6 +16,5 @@ void *malloc_checked(unsigned int b)
 	{
 		exit (98);
 	}
-
 	return (ptr);
 }
