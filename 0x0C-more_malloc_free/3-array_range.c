@@ -5,7 +5,6 @@
  * array_range - creates an array of integers
  *
  * @min: lowest of the integer range
- *
  * @max: the highest of the integer range
  *
  * Return: the array of integers from min to max
@@ -21,7 +20,6 @@ int *array_range(int min, int max)
 	}
 
 	ptr = malloc(max * sizeof(int));
-
 	if (ptr == NULL)
 	{
 		return (NULL);
