@@ -23,34 +23,31 @@ int _strlen(char *s)
 /**
  * _strcat - joins two strings
  *
- * @newstr: destination string
- *
  * @s1: string one
  *
  * @s2: string two
  *
  * Return: newstr
  */
-char *_strcat(char *newstr, char *s1, char *s2, int concatlen)
+char *_strcat(char *s1, char *s2, int concatlen)
 {
 	int i = 0, j = 0;
 
 	//copying s1 to newstr
 	while (s1[i] != '\0')
 	{
-		newstr[i] = s1[i];
 		i++;
 	}
 
 	while (j < concatlen)
 	{
-		newstr[i] = s2[j];
+		s1[i] = s2[j];
 		i++;
 		j++;
 	}
 
-	newstr[i] = '\0';
-	return (newstr);
+	s1[i] = '\0';
+	return (s1);
 }
 
 /**
@@ -86,11 +83,8 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		concatlen = len2;
 	}
-	else
-	{
-		concatlen = n;
-	}
 
+	concatlen = n;
 	newstr = malloc(sizeof(char) * (len1 + concatlen + 1));
 
 	if (newstr == NULL)
@@ -98,7 +92,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		return (NULL);
 	}
 
-	newstr = _strcat(newstr, s1, s2, concatlen);
+	newstr = _strcat(s1, s2, concatlen);
 
 	return (newstr);
 }
