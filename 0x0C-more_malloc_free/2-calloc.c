@@ -3,10 +3,8 @@
 
 /**
  * _memset - fill a block of memory with a particular value
- *
  * @ptr: starting address of memory to be filled
  * @x: value to be filled
- * 
  * @n: number of bytes to be filled
  * Return: pointer to memory
  */
@@ -23,11 +21,8 @@ char *_memset(char *ptr, int x, int n)
 
 /**
  * _calloc - allocates memory for an array
- *
  * @nmemb: number of elements
- *
  * @size: memory size
- *
  * Return: pointer to allocated memory
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
