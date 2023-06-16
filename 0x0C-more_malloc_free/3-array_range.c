@@ -3,15 +3,13 @@
 
 /**
  * array_range - creates an array of integers
- *
  * @min: lowest of the integer range
  * @max: the highest of the integer range
- *
- * Return: the array of integers from min to max
+ * Return: the pointer to the newly created array
  */
 int *array_range(int min, int max)
 {
-	int i = 0;
+	int i;
 	int *ptr;
 
 	if (min > max)
@@ -25,6 +23,7 @@ int *array_range(int min, int max)
 		return (NULL);
 	}
 
+	i = 0;
 	while (min <= max)
 	{
 		ptr[i] = min;
