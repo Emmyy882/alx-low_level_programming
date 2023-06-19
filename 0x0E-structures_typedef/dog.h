@@ -8,7 +8,8 @@
  *
  * Description: struct takes description os a dog
  */
-struct dog {
+struct dog
+{
 	char *name;
 	float age;
 	char *owner;
