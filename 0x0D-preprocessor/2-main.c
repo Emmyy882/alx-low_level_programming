@@ -1,5 +1,4 @@
 #include <stdlib.h>
-#include "main.h"
 /**
  * main - driver function
  * Return: void
