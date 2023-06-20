@@ -1,7 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include "dog.h"
-#ifdef DOG_H
 
 /**
  * free_dog - frees dogs
@@ -12,4 +11,3 @@ void free_dog(dog_t *d)
 {
 	free(d);
 }
-#endif
