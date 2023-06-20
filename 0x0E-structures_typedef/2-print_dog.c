@@ -4,7 +4,7 @@
 
 /**
  * print_dog - checks if an element of d is NULL
- * @d: dog struct
+ * @d: pointer to dog struct
  * Return: 0;
  */
 
