@@ -15,6 +15,14 @@ struct dog
 	char *owner;
 };
 
+/**
+ * dog_t - new struct for type dog
+ * @name: name of dog
+ * @age: age of dog
+ * @owner: owner of dog
+ *
+ * Description: a structure that contains dog info
+ */
 typedef struct
 {
 	char *name;
