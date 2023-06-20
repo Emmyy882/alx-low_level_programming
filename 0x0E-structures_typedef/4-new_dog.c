@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include "dog.h"
 /**
- * dog_t new_dog - creates a new dog structure
+ * new_dog - creates a new dog structure
  * @name: element 1 is dog name
  * @age: element 2 is dog age
  * @owner: element 3 is name of dog owner
@@ -24,5 +24,4 @@ dog_t *new_dog(char *name, float age, char *owner)
 	my_dog->owner = owner;
 
 	return (my_dog);
-	free(my_dog);
 }
