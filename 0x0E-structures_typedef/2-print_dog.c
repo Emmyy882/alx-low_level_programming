@@ -1,6 +1,6 @@
+#include <stdio.h>
 #include "dog.h"
 #include <stdlib.h>
-#include <stdio.h>
 
 /**
  * print_dog - checks if an element of d is NULL
