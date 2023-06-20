@@ -1,12 +1,12 @@
 #ifndef DOG_H
 #define DOG_H
 /**
- * strucct dog - dog structure
+ * struct dog - dog structure
  * @name: dog name
  * @age: dog age
  * @owner: name of dog owner
  *
- * Description: struct takes description os a dog
+ * Description: struct takes description of a dog
  */
 struct dog
 {
@@ -16,7 +16,7 @@ struct dog
 };
 
 /**
- * dog_t - new struct for type dog
+ * struct dog_t - new struct for type dog
  * @name: name of dog
  * @age: age of dog
  * @owner: owner of dog
@@ -30,7 +30,14 @@ typedef struct
 	char *owner;
 }dog_t;
 
-
+/**
+ * init_dog - initialize struct variables
+ * @dog *d: pointer reference to struct dog
+ * @name: holds name of dog
+ * @age: holds age of dog
+ * @owner: holds the name of dog owner
+ * Return: 0
+ */
 void init_dog(struct dog *d, char *name, float age, char *owner);
 
 void print_dog(struct dog *d);
