@@ -3,9 +3,9 @@
 #include "dog.h"
 /**
  * dog_t new_dog - creates a new dog structure
- * @name: element 1, dog name
- * @age: element 2, dog age
- * @owner: element 3, name of dog owner
+ * @name: element 1 is dog name
+ * @age: element 2 is dog age
+ * @owner: element 3 is name of dog owner
  * Return: new dog struct
  */
 
@@ -18,9 +18,11 @@ dog_t *new_dog(char *name, float age, char *owner)
 	{
 		return (NULL);
 	}
+	
 	my_dog->name = name;
 	my_dog->age = age;
 	my_dog->owner = owner;
 
 	return (my_dog);
+	free(my_dog);
 }
