@@ -1,10 +1,11 @@
 #ifndef DOG_H
 #define DOG_H
+
 /**
- * dog - dog structure
- * @name: dog name
- * @age: dog age
- * @owner: name of dog owner
+ * struct dog - dog structure
+ * @name: first member
+ * @age: second member
+ * @owner: third member
  *
  * Description: struct takes description of a dog
  */
@@ -17,9 +18,9 @@ struct dog
 
 /**
  * struct dog_t - new struct for type dog
- * @name: name of dog
- * @age: age of dog
- * @owner: owner of dog
+ * @name: first member
+ * @age: second member
+ * @owner: third member
  *
  * Description: a structure that contains dog info
  */
