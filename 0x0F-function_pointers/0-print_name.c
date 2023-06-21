@@ -1,4 +1,5 @@
 #include <stdlib.h>
+#include <stdio.h>
 #include "function_pointers.h"
 
 /**
@@ -9,6 +10,5 @@
  */
 void print_name(char *name, void (*f)(char *))
 {
-	f(name); //callback function that f
-		 //points to
+	f(name);
 }
