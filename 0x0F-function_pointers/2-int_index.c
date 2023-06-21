@@ -7,7 +7,7 @@
  * @size: number of elements in the array
  * @cmp: pointer to function
  *
- * Return: 1 if found or 0 if not found
+ * Return: result
  */
 int int_index(int *array, int size, int (*cmp)(int))
 {
@@ -23,7 +23,6 @@ int int_index(int *array, int size, int (*cmp)(int))
 		if (cmp(array[i]))
 		{
 			break;
-			return (i);
 		}
 	}
 	return (i);
