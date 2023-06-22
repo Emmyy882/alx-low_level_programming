@@ -16,3 +16,8 @@ int (*get_op_func(char *s))(int, int)
     };
     int i;
 
+    if (s != '+' && s != '-' && s != '*' && s != '/' && s != '%')
+    {
+	    return (NULL);
+    }
+}
