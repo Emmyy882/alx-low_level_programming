@@ -4,7 +4,7 @@
 #include <stdarg.h>
 
 /**
- * print_numbers - print numbers followed by new line
+ * print_numbers - print numbers
  * @separator: string to be printed between numbers
  * @n: number of passed arguments
  */
