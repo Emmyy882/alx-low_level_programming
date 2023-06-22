@@ -8,11 +8,11 @@
  * @separator: string to be printed between numbers
  * @n: stores number of passed arguments
  *
- * Return: result
+ * Return: void
  */
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
-	int size = n, i, result = 0;
+	int size = n, result = 0, i;
 
 	va_list args;
 
