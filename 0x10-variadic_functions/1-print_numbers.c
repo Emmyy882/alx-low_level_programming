@@ -7,12 +7,11 @@
  * print_numbers - print numbers followed by new line
  * @separator: string to be printed between numbers
  * @n: stores number of passed arguments
- *
- * Return: void
+ * Return: nothing
  */
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
-	int size = n, result = 0, i;
+	int size = n, result, i;
 
 	va_list args;
 
@@ -21,6 +20,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 		return;
 	}
 
+	result = 0;
 	va_start(args, n);
 	for (i = 0; i < size; i++)
 	{
