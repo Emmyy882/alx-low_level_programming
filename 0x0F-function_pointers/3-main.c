@@ -4,10 +4,10 @@
 #include <string.h>
 /**
  * main - Entry point of program
- * @argc: number of arguments
- * @argv: array of arguments
+ * @argc: number of passed arguments
+ * @argv: array of passed arguments
  *
- * Return: result
+ * Return: 0
  */
 int main(int argc, char *argv[])
 {
@@ -41,7 +41,6 @@ int main(int argc, char *argv[])
 	}
 
 	result = (get_op_func(argv[2])(num1, num2));
-
 	printf("%d\n", result);
 	return (0);
 }
