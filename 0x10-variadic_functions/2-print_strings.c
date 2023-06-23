@@ -11,12 +11,12 @@
 
 void print_strings(const char *separator, const unsigned int n, ...)
 {
-	int i, size = n;
+	int i, size;
 	char *result;
 
 	va_list args;
 	va_start(args, n);
-
+	size = n;
 	for (i = 0; i < size; i++)
 	{
 		result = va_arg(args, char*);
