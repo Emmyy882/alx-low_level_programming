@@ -16,15 +16,17 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	size = n;
 	result = 0;
 
+	if (separator == NULL)
+		return;
+	
 	va_start(args, n);
 	for (i = 0; i < size; i++)
 	{
 		result = va_arg(args, int);
 		printf("%d", result);
-		if (i != (size - 1))
+		
+		if (i < (size - 1))
 		{
-			if (separator == NULL)
-				return;
 			printf("%s", separator);
 		}
 		va_end(args);
