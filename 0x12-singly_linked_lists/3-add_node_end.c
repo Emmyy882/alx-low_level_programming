@@ -4,8 +4,8 @@
 #include "lists.h"
 
 /**
- * add_note_end - adds a new node at the end of list
- * @*head: pointer to pointer head
+ * add_node_end - adds a new node at the end of list
+ * @head: pointer to pointer head
  * @str: stores string to be added to list_t
  * Return: address of the new element
  */
@@ -45,4 +45,3 @@ list_t *add_node_end(list_t **head, const char *str)
 
 	return (*head);
 }
-
