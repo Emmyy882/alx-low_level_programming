@@ -13,6 +13,7 @@ list_t *add_node_end(list_t **head, const char *str)
 {
 	char *newstr;
 	list_t *new_node;
+	list_t *current = malloc(sizeof(list_t));
 
 	/* duplicating str and storing the dupli
 	 * cate in newstr */
@@ -29,7 +30,18 @@ list_t *add_node_end(list_t **head, const char *str)
 	new_node->len = strlen(newstr);
 	new_node->str = newstr;
 	new_node->next = NULL;
-	(*head)->next = new_node;
+	
+	if (*head == NULL)
+	{
+		*head = new_node;
+	}
+	else
+	{
+		current = *head;
+		while (current->next != NULL)
+			current = current->next;
+	}
+	current->next = new_node;
 
 	return (*head);
 }
