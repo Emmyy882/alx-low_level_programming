@@ -2,7 +2,7 @@
 #include "lists.h"
 
 /**
- * first - prints a set of strings
+ * before_main - prints a set of strings
  * Return: void
  */
 void before_main(void) __attribute__((constructor));
