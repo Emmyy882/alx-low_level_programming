@@ -3,7 +3,7 @@
 
 /**
  * print_list - prints all elements of a list
- * @h: pointer to list_t list
+ * @h: pointer to list
  * Return: number of nodes
  */
 size_t print_list(const list_t *h)
@@ -20,7 +20,6 @@ size_t print_list(const list_t *h)
 		{
 			printf("[0] (nil)\n");
 		}
-		/* increment node and count */
 		count++;
 		h = h->next;
 	}
