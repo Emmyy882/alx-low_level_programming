@@ -1,0 +1,13 @@
+listint_t *prevNode = NULL;
+listint_t *nextNode = *head
+
+while (*head != NULL)
+{
+nextNode = (*head)->next;
+(*head)->next = prevNode
+prevNode = *head
+*head = nextNode
+}
+*head = prevNode
+return (prevNode)
+
