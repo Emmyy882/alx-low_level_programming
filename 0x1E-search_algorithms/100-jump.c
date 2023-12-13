@@ -1,25 +1,6 @@
 #include "search_algos.h"
 
 /**
- * min - checks the minimum between two numbers
- * @a: first number check
- * @b: second number to check
- *
- * Return: minimum number
- */
-size_t min(size_t a, size_t b)
-{
-	if (b > a)
-	{
-		return (a);
-	}
-	else
-	{
-		return (b);
-	}
-}
-
-/**
  * jump_search - searches for a value in a sorted array using the jump search
  * algorithm
  * @array: pointer to the first element of the array to seach in
@@ -31,31 +12,25 @@ size_t min(size_t a, size_t b)
  */
 int jump_search(int *array, size_t size, int value)
 {
-	size_t i, prev, step;
+	size_t i, jump, step;
 
-	prev = 0;
-	step = sqrt(size);  /* finding block size to be jumped */
-	if (!array)
+	if (array == NULL || size == 0)
 		return (-1);
 
-	while (array[min(step, size) - 1] < value)
+	step = sqrt(size);
+	for (i = jump = 0; jump < size && array[jump] < value;)
 	{
-		i = min(step, size);
+		printf("Value checked array[%ld] = [%d]\n", jump, array[jump]);
+		i = jump;
+		jump += step;
+	}
+
+	printf("Value found between indexes [%ld] and [%ld]\n", i, jump);
+
+	jump = jump < size - 1 ? jump : size - 1;
+	for (; i < jump && array[i] < value; i++)
 		printf("Value checked array[%ld] = [%d]\n", i, array[i]);
-		prev = step;
-		step += sqrt(size);
-		if (prev >= size)
-			return (-1);
-	}
-	/* doing a linear search for value in block beginning with prev */
-	while (array[prev] < value)
-	{
-		prev++;
-		if (prev == min(step, size))
-			return (-1);
-	}
-	/* if value is found */
-	if (array[prev] == value)
-		return (prev);
-	return (-1);
+	printf("Value checked array[%ld] = [%d]\n", i, array[i]);
+
+	return (array[i] == value ? (int)i : -1);
 }
